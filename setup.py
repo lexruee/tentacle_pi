@@ -17,7 +17,7 @@ def make_extensions(drivers):
 		ext_path = os.path.join(CURRENT_DIR, extension_dir)
 		src_path = os.path.join(ext_path, extension_src_dir)
 		c_files = filter(lambda x: x.endswith(".c"), src_path)
-		c_files = map(lambda f: os.path.join(CURRENT_DIR, f), c_files)
+		c_files = [ os.path.join(CURRENT_DIR, f) for f in c_files ]
 		exts.append((extension_name, c_files, src_path))
 	return exts
 	
@@ -31,7 +31,7 @@ extensions = make_extensions(DRIVERS)
 
 make_manifest_file(extensions)
 
-ext_modules = map(lambda (name, src_dir,_): Extension(name, src_dir), extensions) 
+ext_modules = [ Extension(name, src_dir) for (name, src_dir,_) in extensions ] 
 
 setup(
 	name = "tentacle_pi",
