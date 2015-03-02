@@ -5,9 +5,9 @@ import os
 
 DRIVERS = [
 	# (module_name, module_dir, module_src_dir)
-	("tentcale_pi.AM2315","am2315","src"),
-	("tentcale_pi.BMP180", "bmp180", "src"),
-	("tentcale_pi.TSL2561", "tsl2561", "src")
+	("tentacle_pi.AM2315","tentacle_pi/am2315","src"),
+	("tentacle_pi.BMP180", "tentacle_pi/bmp180", "src"),
+	("tentacle_pi.TSL2561", "tentacle_pi/tsl2561", "src")
 ]
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -38,11 +38,12 @@ class sdist(sdist_module.sdist):
 
 setup(
 	name = "tentacle_pi",
-	version = "0.1.0",
+	version = "0.1.0.dev3",
 	description = "Tentacles for the Raspberry Pi!",
 	url = "https://github.com/lexruee/tentacle_pi",
 	author = "Alexander Rüedlinger",
 	author_email = "a.rueedlinger@gmail.com",
+	packages = ["tentacle_pi"],
 	
 	cmdclass = {
 		"sdist": sdist,
