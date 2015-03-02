@@ -35,7 +35,9 @@ Install the following packages:
 sudo apt-get install i2c-tools libi2c-dev python-dev
 ```
 
-Configure I2C on your Raspberry Pi.
+Configure I2C on your Raspberry Pi.  On the Adafruit learn platform you will find a great tutorial 
+[how to configure I2C](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c).
+Besides that their products (AM2315, BMP180, TSL2561) are great :smile_cat: .
 
 
 Clone this repository:
