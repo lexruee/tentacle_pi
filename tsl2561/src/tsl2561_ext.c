@@ -141,7 +141,7 @@ static PyMemberDef TSL2561_members[] = {
 static PyTypeObject TSL2561_Type = {
     PyObject_HEAD_INIT(NULL)
     0,                         /*ob_size*/
-    "TSL2561.TSL2561",             /*tp_name*/
+    "tentacle_pi.TSL2561",             /*tp_name*/
     sizeof(TSL2561_Object),             /*tp_basicsize*/
     0,                         /*tp_itemsize*/
     (destructor)TSL2561_dealloc, /*tp_dealloc*/
