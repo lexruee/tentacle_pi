@@ -47,10 +47,16 @@ Configure I2C on your Raspberry Pi.  On the [Adafruit learning platform](https:/
 [how to configure I2C](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c).
 Besides that their products (AM2315, BMP180, TSL2561) are great :smile_cat: .
 
+### pip installer
 
+```bash
+sudo pip install tentacle_pi
+```
+
+### from source
 Clone this repository:
 
-```
+```bash
 git clone https://github.com/lexruee/tentacle_pi
 ```
 
