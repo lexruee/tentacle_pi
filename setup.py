@@ -34,7 +34,7 @@ ext_modules = map(lambda (name, src_dir,_): Extension(name, src_dir), extensions
 
 setup(
 	name = "tentacle_pi",
-	version = "0.0.1.dev1",
+	version = "0.1.0.dev1",
 	description = "Tentacles for the Raspberry Pi!",
 	
 	ext_modules = ext_modules,
