@@ -2,31 +2,32 @@
 from distutils.core import setup, Extension
 import os
 
-drivers = [
+DRIVERS = [
 	# (module_name, module_dir, module_src_dir)
 	("tentcale_pi.AM2315","am2315","src"),
 	("tentcale_pi.BMP180", "bmp180", "src"),
 	("tentcale_pi.TSL2561", "tsl2561", "src")
 ]
 
+CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
+
 def make_extensions(drivers):
 	exts = []
 	for (extension_name, extension_dir, extension_src_dir) in drivers:
-		current_dir = os.path.realpath(__file__)
-		ext_path = os.path.join(current_dir, extension_dir)
+		ext_path = os.path.join(CURRENT_DIR, extension_dir)
 		src_path = os.path.join(ext_path, extension_src_dir)
 		c_files = filter(lambda x: x.endswith(".c"), src_path)
-		c_files = map(lambda f: os.path.join(current_dir, f), c_files)
+		c_files = map(lambda f: os.path.join(CURRENT_DIR, f), c_files)
 		exts.append((extension_name, c_files, src_path))
 	return exts
 	
 	
 def make_manifest_file(extensions):
-	with open("./MANIFEST.in","w+") as f:
+	with open(os.path.join(CURRENT_DIR,"MANIFEST.in"),"w+") as f:
 		[ f.write("graft %s\n" % src_path) for (_,_,src_path) in extensions]
 	
 
-extensions = make_extensions(drivers)
+extensions = make_extensions(DRIVERS)
 
 make_manifest_file(extensions)
 
