@@ -24,7 +24,7 @@ Why did I create this repository?
 * Python 2.7 support! Because most of the single-board computers have Python 2.7 support
 like Raspberry Pi, Raspberry Pi 2, Banana Pi, or BeagleBone Black.
 
-* No hardcoded platform specific drivers
+* No hardcoded platform specific drivers.
  
 * My goal is to support further I2C sensors in the future.
  
