@@ -225,12 +225,10 @@ int am2315_read_data(void *_am, float *temperature, float *humidity) {
 	}
 		
 	// compute humidity value
-	 float hum = am2315_compute_humidity(buf[2], buf[3]);
-	 *humidity = roundf(hum * 10) / 10;
+	*humidity = am2315_compute_humidity(buf[2], buf[3]);
 	
 	// compute temperature value
-	float tmp = am2315_compute_temperature(buf[4], buf[5]);
-	*temperature = roundf(tmp * 10) / 10;
+	*temperature = am2315_compute_temperature(buf[4], buf[5]);
 	
 	// compute crc
 	uint16_t crc_res = am2315_crc16(buf, 6);
