@@ -1,0 +1,9 @@
+[submodule "tentacle_pi/am2315"]
+	path = tentacle_pi/am2315
+	url = https://github.com/lexruee/am2315
+[submodule "tentacle_pi/bmp180"]
+	path = tentacle_pi/bmp180
+	url = https://github.com/lexruee/bmp180
+[submodule "tentacle_pi/tsl2561"]
+	path = tentacle_pi/tsl2561
+	url = https://github.com/lexruee/tsl2561
