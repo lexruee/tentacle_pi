@@ -124,3 +124,11 @@ for x in range(0,10):
 * libi2c-dev
 * python-dev
 * python 2.7
+
+
+## Changelog
+##### 0.1.0
+  * first release
+  * add support for i2c sensor BMP180
+  * add support for i2c sensor AM2315
+  * add support for i2c sensor TSL2561
