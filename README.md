@@ -67,7 +67,7 @@ sudo python setup.py install
 ```
 
 
-## Usage
+## Sensors - Usage
 
 ### AM2315
 
@@ -123,6 +123,42 @@ for x in range(0,10):
 
 ```
 
+## Example: A simple CLI weather station
+
+```python
+from tentacle_pi.TSL2561 import TSL2561
+from tentacle_pi.BMP180 import BMP180
+from tentacle_pi.AM2315 import AM2315
+import time
+from datetime import datetime
+
+# initialize some sensors :-)
+bmp = BMP180(0x77, "/dev/i2c-1")
+tsl = TSL2561(0x39, "/dev/i2c-1")
+am = AM2315(0x5c, "/dev/i2c-1")
+
+tsl.enable_autogain()
+
+print("---------------------------------------------")
+print("time: %s" % datetime.now())
+print("")
+print("bmp180:")
+print("\ttemperature: %0.1f" % bmp.temperature())
+print("\tpressure: %0.1f" % bmp.pressure())
+print("\taltitude: %0.1f" % bmp.altitude())
+
+print("tsl2561:")
+print("\tlux: %s" % tsl.lux())
+
+print("am2315:")
+am_tmp, am_hum, _ = am.sense()
+print("\ttemperature: %0.1f" % am_tmp)
+print("\thumidity: %0.1f" % am_hum)
+print("---------------------------------------------")
+print("")
+# use time.sleep(2) inside a loop because of the AM2315 sensor!
+
+```
 
 ## Dependencies
 
