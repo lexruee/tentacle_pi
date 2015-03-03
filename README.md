@@ -1,6 +1,6 @@
 # Tentacle Pi
 
-Tentacle Pi is my little open source project for writting C drivers
+Tentacle Pi is my little open source project for writing C drivers
 and Python Bindings for I2C sensors. 
 
 
