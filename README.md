@@ -57,7 +57,7 @@ sudo pip install tentacle_pi
 Clone this repository:
 
 ```bash
-git clone https://github.com/lexruee/tentacle_pi
+git clone --recursive https://github.com/lexruee/tentacle_pi
 ```
 
 Install the python module:
