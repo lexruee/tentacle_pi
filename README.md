@@ -34,6 +34,7 @@ Supported I2C sensors are:
  * AM2315 (buggy)
  * BMP180
  * TSL2561
+ * MCP9808
  
  
 ## Installation
@@ -120,6 +121,21 @@ for x in range(0,10):
 	print "lux %s" % tsl.lux()
 	print
 	time.sleep(3)
+
+```
+
+#### MCP9808
+
+```python
+import time
+from tentacle_pi.MCP9808 import MCP9808
+mcp = MCP9808(0x18,"/dev/i2c-1")
+
+for x in range(0,10):
+        temperature = mcp.temperature()
+        print "temperature: %0.2f" % temperature
+        time.sleep(2)
+        
 
 ```
 
