@@ -219,6 +219,10 @@ print("")
 
 ## Changelog
 
+##### 0.3.1
+  * mpl115a2 driver
+   * use the suggested temperature formula in http://forums.adafruit.com/viewtopic.php?f=25&t=34787
+
 ##### 0.3.0
   * add support for i2c sensor MPL115A2
 
