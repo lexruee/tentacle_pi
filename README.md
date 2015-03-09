@@ -38,7 +38,7 @@ Supported I2C sensors are:
  * MPL115A2
  
  
-## Supported platform
+## Supported platforms
 
 Any arm powered single-board computer that runs a debian operaing system is more or less supported.
 
