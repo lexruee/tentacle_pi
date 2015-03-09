@@ -7,3 +7,6 @@
 [submodule "tentacle_pi/tsl2561"]
 	path = tentacle_pi/tsl2561
 	url = https://github.com/lexruee/tsl2561
+[submodule "tentacle_pi/mcp9808"]
+	path = tentacle_pi/mcp9808
+	url = https://github.com/lexruee/mcp9808
