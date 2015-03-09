@@ -169,6 +169,10 @@ print("")
 
 
 ## Changelog
+
+##### 0.2.0
+  * add support for i2c sensor MCP9808
+
 ##### 0.1.0
   * first release
   * add support for i2c sensor BMP180
