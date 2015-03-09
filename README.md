@@ -38,6 +38,22 @@ Supported I2C sensors are:
  * MPL115A2
  
  
+## Supported platform
+
+Any arm powered single-board computer that runs a debian operaing system is more or less supported.
+
+Tested platforms so far are:
+
+ * Raspberry Pi
+ * Raspberry Pi 2
+ * Banana Pi
+ 
+## Current Status / Bugs
+
+I do not guarantee that any of these drivers are bug free. 
+If you find a bug please let me know and create an issue.
+If you are able to fix bug please make a pull request :-).
+ 
 ## Installation
 Install the following packages:
 
