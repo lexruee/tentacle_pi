@@ -219,7 +219,7 @@ print("")
 
 ## Changelog
 
-##### 0.3.1
+##### 0.4.0
   * mpl115a2 driver
    * use the suggested temperature formula in http://forums.adafruit.com/viewtopic.php?f=25&t=34787
 
