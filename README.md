@@ -35,6 +35,7 @@ Supported I2C sensors are:
  * BMP180
  * TSL2561
  * MCP9808
+ * MPL115A2
  
  
 ## Installation
@@ -139,6 +140,22 @@ for x in range(0,10):
 
 ```
 
+### MPL115A2
+```python
+import time
+from tentacle_pi.MPL115A2 import MPL115A2
+mpl = MPL115A2(0x60,"/dev/i2c-1")
+
+for x in range(0,10):
+    temperature, pressure = mpl.temperature(), mpl.pressure()
+    print "temperature: %0.1f" % temperature
+    print "pressure: %0.1f" % pressure
+    print
+    time.sleep(2)
+
+
+```
+
 ## Example: A simple CLI weather station
 
 ```python
@@ -185,6 +202,9 @@ print("")
 
 
 ## Changelog
+
+##### 0.3.0
+  * add support for i2c sensor MPL115A2
 
 ##### 0.2.0
   * add support for i2c sensor MCP9808
