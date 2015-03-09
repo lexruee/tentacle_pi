@@ -124,7 +124,7 @@ for x in range(0,10):
 
 ```
 
-#### MCP9808
+### MCP9808
 
 ```python
 import time
