@@ -10,3 +10,6 @@
 [submodule "tentacle_pi/mcp9808"]
 	path = tentacle_pi/mcp9808
 	url = https://github.com/lexruee/mcp9808
+[submodule "tentacle_pi/mpl115a2"]
+	path = tentacle_pi/mpl115a2
+	url = https://github.com/lexruee/mpl115a2
