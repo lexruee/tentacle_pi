@@ -90,11 +90,13 @@ sudo python setup.py install
 | ------------- |:-------------:|
 | am2315        | 0x5c          |
 | bmp180        | 0x77          |
-| tsl2561*      | 0x29,0x39,0x49|
+| tsl2561       | 0x29,0x39,0x49|
 | mcp9808       | 0x18          |
 | mpl115a2      | 0x60          |
 
-* default address is 0x39
+Remarks:
+
+ * tsl2561: default address is 0x39
 
 
 ## Sensors - Usage
