@@ -86,13 +86,13 @@ sudo python setup.py install
 
 ## Sensors - I2C addresses
 
-| I2C devic     | Address       |
-| ------------- |:-------------:|
-| am2315        | 0x5c          |
-| bmp180        | 0x77          |
-| tsl2561       | 0x29,0x39,0x49|
-| mcp9808       | 0x18          |
-| mpl115a2      | 0x60          |
+| I2C devic     | Address       | Spec sheet |
+| ------------- |:-------------:|:-----------| 
+| am2315        | 0x5c          | [Link](https://www.adafruit.com/datasheets/AM2315.pdf) |
+| bmp180        | 0x77          | [Link](http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf) |
+| tsl2561       | 0x29,0x39,0x49| [Link](http://www.adafruit.com/datasheets/TSL2561.pdf) |
+| mcp9808       | 0x18          | [Link](http://www.farnell.com/datasheets/1522173.pdf) |
+| mpl115a2      | 0x60          | [Link](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf) |
 
 Remarks:
 
