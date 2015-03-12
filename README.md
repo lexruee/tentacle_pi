@@ -253,7 +253,7 @@ print("")
 ## Changelog
 
 ##### 0.5.0
-  * add support for i2c driver LM75
+  * add support for i2c sensor LM75
 
 ##### 0.4.0
   * mpl115a2 driver
