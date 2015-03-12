@@ -13,3 +13,6 @@
 [submodule "tentacle_pi/mpl115a2"]
 	path = tentacle_pi/mpl115a2
 	url = https://github.com/lexruee/mpl115a2
+[submodule "tentacle_pi/lm75"]
+	path = tentacle_pi/lm75
+	url = https://github.com/lexruee/lm75
