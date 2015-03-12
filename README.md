@@ -253,6 +253,7 @@ print("")
 ## Changelog
 
 ##### 0.5.0
+  * update drivers / synchronize drivers with master branch
   * add support for i2c sensor LM75
 
 ##### 0.4.0
