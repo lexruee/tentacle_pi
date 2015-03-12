@@ -36,6 +36,7 @@ Supported I2C sensors are:
  * TSL2561
  * MCP9808
  * MPL115A2
+ * LM75
  
  
 ## Supported platforms
@@ -93,6 +94,8 @@ sudo python setup.py install
 | tsl2561       | 0x29,0x39,0x49| [Link](http://www.adafruit.com/datasheets/TSL2561.pdf) |
 | mcp9808       | 0x18          | [Link](http://www.farnell.com/datasheets/1522173.pdf) |
 | mpl115a2      | 0x60          | [Link](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf) |
+| lm75      	| 0x48          | [Link](http://datasheets.maximintegrated.com/en/ds/LM75.pdf) |
+
 
 Remarks:
 
@@ -171,6 +174,7 @@ for x in range(0,10):
 ```
 
 ### MPL115A2
+
 ```python
 import time
 from tentacle_pi.MPL115A2 import MPL115A2
@@ -182,6 +186,21 @@ for x in range(0,10):
     print "pressure: %0.1f" % pressure
     print
     time.sleep(2)
+
+
+```
+
+### LM75
+
+```python
+import time
+from tentacle_pi.LM75 import LM75
+lm = LM75(0x48,"/dev/i2c-1")
+
+for x in range(0,10):
+        temperature = lm.temperature()
+        print "temperature: %0.2f" % temperature
+        time.sleep(2)
 
 
 ```
@@ -232,6 +251,9 @@ print("")
 
 
 ## Changelog
+
+##### 0.5.0
+  * add support for i2c driver LM75
 
 ##### 0.4.0
   * mpl115a2 driver
