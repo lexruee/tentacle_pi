@@ -88,8 +88,7 @@ sudo python setup.py install
 If you have already a copy of this repository you can run this command to update your local copy:
 
 ```bash
-pi $ git submodule foreach git pull origin master
-
+git submodule update --init --recursive
 ```
 
 ## Sensors - I2C addresses
