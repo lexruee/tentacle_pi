@@ -72,6 +72,12 @@ Besides that their products (AM2315, BMP180, TSL2561) are great :smile_cat: .
 sudo pip install tentacle_pi
 ```
 
+If you want to update:
+
+```bash
+sudo pip install tentacle_pi --upgrade
+```
+
 ### from source
 Clone this repository:
 
