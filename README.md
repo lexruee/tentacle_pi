@@ -99,15 +99,15 @@ git submodule update --init --recursive
 
 ## Sensors - I2C addresses
 
-| I2C device     | Address       | Spec sheet |
-| ------------- |:-------------:|:-----------| 
-| am2315        | 0x5c          | [Link](https://www.adafruit.com/datasheets/AM2315.pdf) |
-| am2321        | 0x5c          | [Link](http://akizukidenshi.com/download/ds/aosong/AM2321_e.pdf) |
-| bmp180        | 0x77          | [Link](http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf) |
-| tsl2561       | 0x29,0x39,0x49| [Link](http://www.adafruit.com/datasheets/TSL2561.pdf) |
-| mcp9808       | 0x18          | [Link](http://www.farnell.com/datasheets/1522173.pdf) |
-| mpl115a2      | 0x60          | [Link](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf) |
-| lm75      	| 0x48          | [Link](http://datasheets.maximintegrated.com/en/ds/LM75.pdf) |
+| I2C device    | Address       | Sensor type   | Spec sheet |
+| ------------- |:-------------:|:-------------:|:-----------| 
+| am2315        | 0x5c          | Temperature/Humidity |  [Link](https://www.adafruit.com/datasheets/AM2315.pdf) |
+| am2321        | 0x5c          | Temperature/Humidity |  [Link](http://akizukidenshi.com/download/ds/aosong/AM2321_e.pdf) |
+| bmp180        | 0x77          | Barometric Pressure/Temperature/Altitude |  [Link](http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf) |
+| tsl2561       | 0x29,0x39,0x49| Luminosity/Lux/Light |  [Link](http://www.adafruit.com/datasheets/TSL2561.pdf) |
+| mcp9808       | 0x18          | Temperature |  [Link](http://www.farnell.com/datasheets/1522173.pdf) |
+| mpl115a2      | 0x60          | Barometric Pressure/Temperature |  [Link](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf) |
+| lm75      	| 0x48          | Temperature |  [Link](http://datasheets.maximintegrated.com/en/ds/LM75.pdf) |
 
 
 Remarks:
