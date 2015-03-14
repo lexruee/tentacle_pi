@@ -59,7 +59,7 @@ If you are able to fix a bug please make a pull request :-).
 Install the following packages:
 
 ```bash
-sudo apt-get install i2c-tools libi2c-dev python-dev
+sudo apt-get install i2c-tools libi2c-dev python-dev build-essential
 ```
 
 Configure I2C on your Raspberry Pi.  On the [Adafruit learning platform](https://learn.adafruit.com/) you will find a great tutorial 
@@ -262,7 +262,8 @@ print("")
 
 ## Dependencies
 
-* i2c-tools 
+* i2c-tools
+* build-essential 
 * libi2c-dev
 * python-dev
 * python 2.7
