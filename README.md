@@ -1,7 +1,7 @@
 # Tentacle Pi
 
 Tentacle Pi is my little open source project for writing C drivers
-and Python bindings for I2C sensors. 
+and Python bindings for I2C sensors.
 
 
 Right know some drivers might be buggy (e.g. AM2315) and there is no
@@ -12,23 +12,23 @@ Why did I create this repository?
 
 * For my project at the University I need a single repository that
  contains all necessary drivers.
- 
+
 * Besides that I want to learn how to write linux drivers for I2C sensors
  and Python C extensions.
- 
-* I want sensor drivers that are purely written in C for portability 
+
+* I want sensor drivers that are purely written in C for portability
  and performance reasons.
- 
+
 * No additional dependencies like boost, wiringPi or quick2wire.
 
 * Python 2.7 support! Because most of the single-board computers have Python 2.7 support
 like Raspberry Pi, Raspberry Pi 2, Banana Pi, or BeagleBone Black.
 
 * No hardcoded platform specific drivers.
- 
+
 * My goal is to support further I2C sensors in the future.
- 
- 
+
+
 Supported I2C sensors are:
 
  * AM2315 (buggy)
@@ -37,24 +37,24 @@ Supported I2C sensors are:
  * MCP9808
  * MPL115A2
  * LM75
- 
- 
+
+
 ## Supported platforms
 
-Any arm powered single-board computer that runs a debian operaing system is more or less supported.
+Any arm powered single-board computer that runs a debian operating system is more or less supported.
 
 Tested platforms so far are:
 
  * Raspberry Pi
  * Raspberry Pi 2
  * Banana Pi
- 
+
 ## Current Status / Bugs
 
-I do not guarantee that any of these drivers are bug free. 
+I do not guarantee that any of these drivers are bug free.
 If you find a bug please let me know and create an issue.
 If you are able to fix a bug please make a pull request :-).
- 
+
 ## Installation
 Install the following packages:
 
@@ -62,7 +62,7 @@ Install the following packages:
 sudo apt-get install i2c-tools libi2c-dev python-dev build-essential
 ```
 
-Configure I2C on your Raspberry Pi.  On the [Adafruit learning platform](https://learn.adafruit.com/) you will find a great tutorial 
+Configure I2C on your Raspberry Pi.  On the [Adafruit learning platform](https://learn.adafruit.com/) you will find a great tutorial
 [how to configure I2C](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c).
 Besides that their products (AM2315, BMP180, TSL2561) are great :smile_cat: .
 
@@ -100,7 +100,7 @@ git submodule update --init --recursive
 ## Sensors - I2C addresses
 
 | I2C device    | Address       | Sensor type   | Spec sheet |
-| ------------- |:-------------:|:-------------:|:-----------| 
+| ------------- |:-------------:|:-------------:|:-----------|
 | am2315        | 0x5c          | Temperature/Humidity |  [Link](https://www.adafruit.com/datasheets/AM2315.pdf) |
 | am2321        | 0x5c          | Temperature/Humidity |  [Link](http://akizukidenshi.com/download/ds/aosong/AM2321_e.pdf) |
 | bmp180        | 0x77          | Barometric Pressure/Temperature/Altitude |  [Link](http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf) |
@@ -187,7 +187,7 @@ for x in range(0,10):
         temperature = mcp.temperature()
         print "temperature: %0.2f" % temperature
         time.sleep(2)
-        
+
 
 ```
 
@@ -263,7 +263,7 @@ print("")
 ## Dependencies
 
 * i2c-tools
-* build-essential 
+* build-essential
 * libi2c-dev
 * python-dev
 * python 2.7
