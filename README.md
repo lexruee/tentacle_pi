@@ -117,6 +117,10 @@ Remarks:
 
 
 ## Sensors - Usage
+Raspberry Pi: add pi to the group i2c if you want to run your program without sudo.
+```
+sudo usermod -a -G i2c pi
+```
 
 ### AM2315 / AM2321
 
