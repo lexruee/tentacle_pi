@@ -94,6 +94,7 @@ sudo python setup.py install
 If you have already a copy of this repository you can run this command to update your local copy:
 
 ```bash
+git pull origin master
 git submodule update --init --recursive
 ```
 
@@ -274,6 +275,9 @@ print("")
 
 
 ## Changelog
+
+##### 0.6.0
+  * fix bug: running a python script without sudo results in a segmentation fault
 
 ##### 0.5.0
   * update drivers / synchronize drivers with master branch

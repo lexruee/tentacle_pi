@@ -24,16 +24,16 @@ def make_extensions(drivers):
 		c_files = [ os.path.join(src_path, f) for f in c_files ]
 		exts.append((extension_name, c_files, src_path))
 	return exts
-	
-	
+
+
 def make_manifest_file(extensions):
 	with open(os.path.join(CURRENT_DIR,"MANIFEST.in"),"w+") as f:
 		[ f.write("graft %s\n" % src_path) for (_,_,src_path) in extensions]
-	
+
 
 
 class sdist(sdist_module.sdist):
-	
+
 	def run(self):
 		extensions = make_extensions(DRIVERS)
 		make_manifest_file(extensions)
@@ -41,18 +41,18 @@ class sdist(sdist_module.sdist):
 
 setup(
 	name = "tentacle_pi",
-	version = "0.5.0",
+	version = "0.6.0",
 	description = "Tentacles for the Raspberry Pi!",
 	url = "https://github.com/lexruee/tentacle_pi",
 	author = "Alexander Rüedlinger",
 	author_email = "a.rueedlinger@gmail.com",
 	packages = ["tentacle_pi"],
-	
+
 	cmdclass = {
 		"sdist": sdist,
 	},
-	
+
 	ext_modules = [ Extension(name, src_dir) for (name, src_dir,_) in make_extensions(DRIVERS) ],
-	
+
 	license = "MIT"
 )
