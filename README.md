@@ -1,5 +1,7 @@
 # Tentacle Pi
 
+[![PyPI](https://img.shields.io/pypi/v/tentacle_pi.svg)]()
+
 Tentacle Pi is my little open source project for writing C drivers
 and Python bindings for I2C sensors.
 
