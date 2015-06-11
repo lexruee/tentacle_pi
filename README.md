@@ -47,9 +47,10 @@ Any arm powered single-board computer that runs a debian operating system is mor
 
 Tested platforms so far are:
 
- * Raspberry Pi
- * Raspberry Pi 2
- * Banana Pi
+ * Raspberry Pi / Raspbian
+ * Raspberry Pi 2 / Raspbian
+ * Banana Pi / Raspbian
+ * Odroid C1 / Ubuntu
 
 ## Current Status / Bugs
 
