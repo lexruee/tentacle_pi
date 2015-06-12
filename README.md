@@ -72,7 +72,7 @@ On the [Adafruit learning platform](https://learn.adafruit.com/) you will find a
 [how to configure I2C](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c).
 Besides that their products (AM2315, BMP180, TSL2561) are great :smile_cat: .
 
-#### Odroid C 1
+#### Odroid C1
 Here is a great [blog post](https://www.abelectronics.co.uk/i2codroidc1/info.aspx) that explains how I2C can be configured on the Odroid C1.
 
 
