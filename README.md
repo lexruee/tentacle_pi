@@ -279,6 +279,12 @@ print("")
 
 ## Changelog
 
+##### 0.6.1
+  * forgot to update git submodules. Sry, my bad :-).
+  * add tests:
+    * test_load_sensors.py
+    * test_fixed_segfault.py
+
 ##### 0.6.0
   * fix bug: running a python script without sudo results in a segmentation fault
 
