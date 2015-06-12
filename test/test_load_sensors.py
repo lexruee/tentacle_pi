@@ -1,4 +1,5 @@
 #encoding: utf-8
+import time
 from tentacle_pi.AM2315 import AM2315
 from tentacle_pi.BMP180 import BMP180
 from tentacle_pi.TSL2561 import TSL2561
