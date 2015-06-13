@@ -285,4 +285,4 @@ print("")
 
 
 ## Changelog
- [Click here](https://github.com/lexruee/tentacle_pi/edit/master/CHANGElOG.md)
+ [Click here](https://github.com/lexruee/tentacle_pi/master/CHANGElOG.md)
