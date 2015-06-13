@@ -41,7 +41,7 @@ class sdist(sdist_module.sdist):
 
 setup(
     name="tentacle_pi",
-    version="0.6.1",
+    version="0.6.2",
     description="Tentacles for the Raspberry Pi!",
     url="https://github.com/lexruee/tentacle_pi",
     author="Alexander Rüedlinger",
