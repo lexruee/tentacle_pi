@@ -33,7 +33,7 @@ like Raspberry Pi, Raspberry Pi 2, Banana Pi, or BeagleBone Black.
 
 Supported I2C sensors are:
 
- * AM2315 (buggy)
+ * AM2315 / AM2321
  * BMP180
  * TSL2561
  * MCP9808
