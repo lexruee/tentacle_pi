@@ -6,25 +6,16 @@ Tentacle Pi is my little open source project for writing C drivers
 and Python bindings for I2C sensors.
 
 
-Right know some drivers might be buggy (e.g. AM2315) and there is no
-Python 3 support.
-
-
 Why did I create this repository?
 
 * For my project at the University I need a single repository that
  contains all necessary drivers.
 
-* Besides that I want to learn how to write linux drivers for I2C sensors
- and Python C extensions.
-
-* I want sensor drivers that are purely written in C for portability
- and performance reasons.
+* Besides that I want to learn how to write drivers for I2C sensors.
 
 * No additional dependencies like boost, wiringPi or quick2wire.
 
-* Python 2.7 support! Because most of the single-board computers have Python 2.7 support
-like Raspberry Pi, Raspberry Pi 2, Banana Pi, or BeagleBone Black.
+* Python 2.7 support! Because most of the single-board computers have Python 2.7 support like Raspberry Pi, Raspberry Pi 2, Banana Pi, or BeagleBone Black.
 
 * No hardcoded platform specific drivers.
 
