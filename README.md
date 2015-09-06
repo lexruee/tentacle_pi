@@ -47,11 +47,6 @@ Tested platforms so far are:
  * Banana Pi / Raspbian
  * Odroid C1 / Ubuntu
 
-## Current Status / Bugs
-
-I do not guarantee that any of these drivers are bug free.
-If you find a bug please let me know and create an issue.
-If you are able to fix a bug please make a pull request :-).
 
 ## Installation
 Install the following packages:
