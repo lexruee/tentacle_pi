@@ -10,22 +10,6 @@ WARNING for Tentacle Pi 1.0.0 release:
 Tentacle Pi is a growing collection of drivers for popular I2C sensors.
 
 
-Why did I create this repository?
-
-* For my project at the University I need a single repository that
- contains all necessary drivers.
-
-* Besides that I want to learn how to write drivers for I2C sensors.
-
-* No additional dependencies like boost, wiringPi or quick2wire.
-
-* Python 2.7 support! Because most of the single-board computers have Python 2.7 support like Raspberry Pi, Raspberry Pi 2, Banana Pi, or BeagleBone Black.
-
-* No hardcoded platform specific drivers.
-
-* My goal is to support further I2C sensors in the future.
-
-
 Supported I2C sensors are:
 
  * AM2315 / AM2321
