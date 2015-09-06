@@ -7,7 +7,7 @@ WARNING for Tentacle Pi 1.0.0 release:
  * Tentacle Pi will be released under the GPLv2
  * Drivers are rewritten in pure python (new API)
 
-Tentacle Pi is a growing collection of drivers for popular I2C sensors.
+Tentacle Pi is a growing collection of drivers for popular I2C devices.
 
 
 ## Supported I2C devices
