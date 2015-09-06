@@ -10,15 +10,23 @@ WARNING for Tentacle Pi 1.0.0 release:
 Tentacle Pi is a growing collection of drivers for popular I2C sensors.
 
 
-## Supported I2C sensors
+## Supported I2C devices
 
- * AM2315 / AM2321
- * BMP180
- * TSL2561
- * MCP9808
- * MPL115A2
- * LM75
+| I2C device    | Address       | Sensor type   | Spec sheet |
+| ------------- |:-------------:|:-------------:|:-----------|
+| am2315        | 0x5c          | Temperature/Humidity |  [Link](https://www.adafruit.com/datasheets/AM2315.pdf) |
+| am2321        | 0x5c          | Temperature/Humidity |  [Link](http://akizukidenshi.com/download/ds/aosong/AM2321_e.pdf) |
+| bmp180        | 0x77          | Barometric Pressure/Temperature/Altitude |  [Link](http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf) |
+| tsl2561       | 0x29,0x39,0x49| Luminosity/Lux/Light |  [Link](http://www.adafruit.com/datasheets/TSL2561.pdf) |
+| mcp9808       | 0x18          | Temperature |  [Link](http://www.farnell.com/datasheets/1522173.pdf) |
+| mpl115a2      | 0x60          | Barometric Pressure/Temperature |  [Link](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf) |
+| lm75      	| 0x48          | Temperature |  [Link](http://datasheets.maximintegrated.com/en/ds/LM75.pdf) |
 
+
+Remarks:
+
+ * tsl2561: default address is 0x39
+ * am2315/am2321: you can use the am2315 driver for am2321 sensor
 
 ## Supported platforms
 
@@ -82,26 +90,8 @@ git pull origin master
 git submodule update --init --recursive
 ```
 
-## Sensors - I2C addresses
 
-| I2C device    | Address       | Sensor type   | Spec sheet |
-| ------------- |:-------------:|:-------------:|:-----------|
-| am2315        | 0x5c          | Temperature/Humidity |  [Link](https://www.adafruit.com/datasheets/AM2315.pdf) |
-| am2321        | 0x5c          | Temperature/Humidity |  [Link](http://akizukidenshi.com/download/ds/aosong/AM2321_e.pdf) |
-| bmp180        | 0x77          | Barometric Pressure/Temperature/Altitude |  [Link](http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf) |
-| tsl2561       | 0x29,0x39,0x49| Luminosity/Lux/Light |  [Link](http://www.adafruit.com/datasheets/TSL2561.pdf) |
-| mcp9808       | 0x18          | Temperature |  [Link](http://www.farnell.com/datasheets/1522173.pdf) |
-| mpl115a2      | 0x60          | Barometric Pressure/Temperature |  [Link](http://cache.freescale.com/files/sensors/doc/data_sheet/MPL115A2.pdf) |
-| lm75      	| 0x48          | Temperature |  [Link](http://datasheets.maximintegrated.com/en/ds/LM75.pdf) |
-
-
-Remarks:
-
- * tsl2561: default address is 0x39
- * am2315/am2321: you can use the am2315 driver for am2321 sensor
-
-
-## Sensors - Usage
+## Usage
 Raspberry Pi: add pi to the group i2c if you want to run your program without sudo.
 ```
 sudo usermod -a -G i2c pi
