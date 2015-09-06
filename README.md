@@ -10,7 +10,7 @@ WARNING for Tentacle Pi 1.0.0 release:
 Tentacle Pi is a growing collection of drivers for popular I2C sensors.
 
 
-Supported I2C sensors are:
+## Supported I2C sensors
 
  * AM2315 / AM2321
  * BMP180
